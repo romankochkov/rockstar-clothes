@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'HelveticaRegular';
+    src: url('../fonts/HelveticaNowDisplay-Regular.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'HelveticaMedium';
+    src: url('../fonts/HelveticaNowDisplay-Medium.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('../fonts/HelveticaNowDisplay-Bold.ttf');
+    font-weight: 700;
+}
+
+$background-primary-color: #0B0B0B;
+$background-secondary-color: #000000;
+$secondary-color: #262626;
+$label-color: #e8e8e8;
+$light-color: #e8e8e8;
+$border-color: #282828;
+$hover-color: #FCAF17;
+
+$regular-font: 'HelveticaRegular';
+$medium-font: 'HelveticaMedium';
+$bold-font: 'HelveticaBold';
+
+$nav-font-size: 15px;
+$section-font-size: 26px;
+$product-font-size: 23px;
+
+$round-border: 50px;

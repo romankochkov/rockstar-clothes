@@ -1,0 +1,178 @@
+@import 'variables';
+
+.hide {
+  transform: translateY(-100%);
+}
+
+.main {
+  position: relative;
+  background-color: $background-primary-color;
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  background-color: rgba($background-secondary-color, $alpha: .83);
+  backdrop-filter: blur(25px);
+  border: 1px solid $border-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav .logo {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  align-self: center;
+  cursor: pointer;
+}
+
+.nav .logo img {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-45%);
+}
+
+.nav .links {
+  font-family: $regular-font;
+  font-size: $nav-font-size;
+  margin-top: -3px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav .links a {
+  color: $light-color;
+  text-decoration: none;
+}
+
+.nav .links a:hover {
+  color: $hover-color;
+}
+
+.nav .links .tshirts {
+  margin-left: 50px;
+  margin-right: 25px;
+}
+
+.nav .links .shorts {
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+.nav .language {
+  align-self: center;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.nav .cart {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-color: $secondary-color;
+  border-radius: $round-border;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.nav .cart:hover i {
+  color: $hover-color;
+}
+
+.nav .cart i {
+  position: absolute;
+  top: 51%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.poster {
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+
+.poster .image {
+  width: 100%;
+  height: auto;
+}
+
+.products {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.products .title {
+  color: #ffffff;
+  font-family: $bold-font;
+  font-size: $section-font-size;
+  margin-bottom: 30px;
+}
+
+.products .product {
+  background-color: $background-secondary-color;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+}
+
+.products .product .image {
+  width: 100%;
+  height: auto;
+}
+
+.products .product .info {
+  padding-top: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.products .product .info .name {
+  color: #ffffff;
+  font-family: $bold-font;
+  font-size: $product-font-size;
+  margin-bottom: 13px;
+}
+
+.products .product .info .label {
+  color: $label-color;
+  font-family: $medium-font;
+  font-size: 16px;
+  display: inline-flex;
+}
+
+.products .product .info .size {
+  color: #ffffff;
+  font-family: $medium-font;
+  font-size: 16px;
+  margin-left: 10px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.products .product .info .size:hover {
+  color: $hover-color;
+}
+
+.footer {
+  background-color: $background-secondary-color;
+  padding-top: 40px;
+}
+
+.footer .logo {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.footer .logo img {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
