@@ -12,7 +12,7 @@
 .nav {
   width: 100%;
   position: fixed;
-  background-color: rgba($background-secondary-color, $alpha: .83);
+  background-color: rgba($background-secondary-color, $alpha: .82);
   backdrop-filter: blur(25px);
   border: 1px solid $border-color;
   padding-top: 20px;
@@ -60,6 +60,11 @@
 
 .nav .links .shorts {
   margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav .links .tracking {
+  margin-left: 25px;
   margin-right: 50px;
 }
 
@@ -70,12 +75,13 @@
 }
 
 .nav .cart {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   position: relative;
   background-color: $secondary-color;
   border-radius: $round-border;
   display: inline-flex;
+  align-self: center;
   cursor: pointer;
 }
 
@@ -85,11 +91,11 @@
 
 .nav .cart i {
   position: absolute;
-  top: 51%;
+  top: 51.5%;
   left: 48%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .poster {
@@ -111,13 +117,20 @@
   color: #ffffff;
   font-family: $bold-font;
   font-size: $section-font-size;
-  margin-bottom: 30px;
+  margin-bottom: -15px;
 }
 
 .products .product {
   background-color: $background-secondary-color;
   border: 1px solid $border-color;
   border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.products .product:hover {
+  transform: scale(1.03)
 }
 
 .products .product .image {
@@ -126,10 +139,60 @@
 }
 
 .products .product .info {
-  padding-top: 18px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  padding-top: 23px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 30px;
+}
+
+.products .product .colors {
+  float: right;
+  display: inline-flex;
+}
+
+.products .product .colors .white {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-right: 10px;
+  display: inline-flex;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.products .product .colors .white:hover {
+  border: 2px solid $hover-color;
+}
+
+.products .product .colors .gray {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #828282;
+  margin-right: 10px;
+  display: inline-flex;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.products .product .colors .gray:hover {
+  border: 2px solid $hover-color;
+}
+
+.products .product .colors .black {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #000000;
+  box-shadow: 0 0 1.5px rgba(#fff, .6);
+  display: inline-flex;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.products .product .colors .black:hover {
+  border: 2px solid $hover-color;
 }
 
 .products .product .info .name {
@@ -137,6 +200,7 @@
   font-family: $bold-font;
   font-size: $product-font-size;
   margin-bottom: 13px;
+  display: inline-flex;
 }
 
 .products .product .info .label {

@@ -48,6 +48,7 @@ export default function Navbar() {
                                 <div className={styles.tshirts}><a href="/t-shirts">T-Shirts</a></div>
                                 <div className={styles.shorts}><a href="/shorts">Shorts</a></div>
                                 <div className={styles.tracking}><a href="/tracking">Tracking</a></div>
+                                <div className={styles.news}><a href="/news">News</a></div>
                             </div>
                             <div className="d-flex justify-content-end" style={{ minWidth: '90px' }}>
                                 <Image

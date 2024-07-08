@@ -31,11 +31,11 @@ export default function Home() {
 
       <section className={styles.products}>
         <div className="container">
-          <div className="row">
+          <div className="row g-5">
             <div className="col-12">
               <div className={styles.title}>Products</div>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
               <div className={styles.product}>
                 <Image
                   src="/product-wallpaper.png"
@@ -47,6 +47,42 @@ export default function Home() {
                 />
                 <div className={styles.info}>
                   <div className={styles.name}>T-Shirts</div>
+                  <div className={styles.colors}>
+                    <div className={styles.white}></div>
+                    <div className={styles.gray}></div>
+                    <div className={styles.black}></div>
+                  </div>
+
+                  <div className={styles.sizes}>
+                    <div className={styles.label}>Sizes:</div>
+                    <div className={styles.size}>S</div>
+                    <div className={styles.size}>M</div>
+                    <div className={styles.size}>L</div>
+                    <div className={styles.size}>XL</div>
+                    <div className={styles.size}>XXL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className={styles.product}>
+                <Image
+                  src="/product-wallpaper.png"
+                  className={styles.image}
+                  width={560}
+                  height={200}
+                  quality={100}
+                  alt="PRODUCT"
+                />
+                <div className={styles.info}>
+                  <div className={styles.name}>Shorts</div>
+                  <div className={styles.colors}>
+                    <div className={styles.white}></div>
+                    <div className={styles.gray}></div>
+                    <div className={styles.black}></div>
+                  </div>
+
                   <div className={styles.sizes}>
                     <div className={styles.label}>Sizes:</div>
                     <div className={styles.size}>S</div>
