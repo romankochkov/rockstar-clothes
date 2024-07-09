@@ -1,4 +1,10 @@
 @font-face {
+    font-family: 'HelveticaLight';
+    src: url('../fonts/HelveticaNowDisplay-Light.ttf');
+    font-weight: 400;
+}
+
+@font-face {
     font-family: 'HelveticaRegular';
     src: url('../fonts/HelveticaNowDisplay-Regular.ttf');
     font-weight: 500;
@@ -24,6 +30,7 @@ $light-color: #e8e8e8;
 $border-color: #282828;
 $hover-color: #FCAF17;
 
+$light-font: 'HelveticaLight';
 $regular-font: 'HelveticaRegular';
 $medium-font: 'HelveticaMedium';
 $bold-font: 'HelveticaBold';

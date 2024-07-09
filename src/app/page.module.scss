@@ -71,7 +71,6 @@
 .nav .language {
   align-self: center;
   margin-right: 25px;
-  cursor: pointer;
 }
 
 .nav .cart {
@@ -225,7 +224,7 @@
 
 .footer {
   background-color: $background-secondary-color;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .footer .logo {
@@ -239,4 +238,92 @@
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
+}
+
+.footer .warning {
+  color: #fff;
+  font-family: $light-font;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.footer .links {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-left: 40px;
+}
+
+.footer .links .topic {
+  font-family: $bold-font;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer .links .link {
+  font-family: $regular-font;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer .links .link a {
+  color: $light-color;
+}
+
+.footer .links .link a:hover {
+  color: $hover-color;
+}
+
+.footer .language {
+  border: 1px solid #151515;
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 11px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.footer .language:hover {
+  border: 1px solid #fff;
+}
+
+.footer .language .title {
+  color: #ffffff;
+  font-family: $bold-font;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: inline-flex;
+}
+
+.footer .language i {
+  color: #ffffff;
+  font-size: 14.5px;
+  display: inline-flex;
+}
+
+.footer .social {
+  margin-top: 30px;
+}
+
+.footer .social i {
+  color: #cccccc;
+  font-size: 20px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.footer .social i:hover {
+  color: $hover-color;
+}
+
+.footer .copyright {
+  border-top: 1px solid #151515;
+  color: #565656;
+  font-family: $regular-font;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 5px;
 }

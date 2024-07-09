@@ -100,8 +100,8 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className="container">
-          <div className="row">
-            <div className="col-12">
+          <div className="row g-5">
+            <div className="col-2">
               <div className={styles.logo}>
                 <Image
                   src="/logo.svg"
@@ -111,6 +111,41 @@ export default function Home() {
                   alt="LOGO"
                 />
               </div>
+              <div className={styles.warning}>Rockstar Games Clothes has nothing<br></br>to do with Rockstar Games company</div>
+            </div>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div className={styles.links}>
+                <div className={styles.topic}>Store</div>
+                <div className={styles.link}><a>Products</a></div>
+                <div className={styles.link}><a>Tracking</a></div>
+                <div className={styles.link}><a>Support</a></div>
+              </div>
+              <div className={styles.links}>
+                <div className={styles.topic}>Platform</div>
+                <div className={styles.link}><a>Cookie Policy</a></div>
+                <div className={styles.link}><a>Privacy Policy</a></div>
+                <div className={styles.link}><a>Terms of Use</a></div>
+              </div>
+            </div>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4">
+              <div className="d-flex justify-content-end">
+                <div className={styles.language}>
+                  <i className="fa-regular fa-globe"></i>
+                  <div className={styles.title}>English</div>
+                  <i className="fa-regular fa-angle-down"></i>
+                </div>
+              </div>
+              <div className="d-flex justify-content-end">
+                <div className={styles.social}>
+                  <i className="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-x-twitter"></i>
+                  <i className="fa-brands fa-facebook"></i>
+                  <i className="fa-brands fa-amazon"></i>
+                </div>
+              </div>
+            </div>
+            <div className="col-12">
+              <div className={styles.copyright}>Rockstar Games Clothes. All rights reserved</div>
             </div>
           </div>
         </div>
