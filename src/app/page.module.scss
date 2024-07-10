@@ -97,6 +97,31 @@
   font-size: 13px;
 }
 
+.nav .sidebar {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  background-color: $secondary-color;
+  border-radius: $round-border;
+  margin-left: 10px;
+  display: inline-flex;
+  align-self: center;
+  cursor: pointer;
+}
+
+.nav .sidebar:hover i {
+  color: $hover-color;
+}
+
+.nav .sidebar i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 14px;
+}
+
 .poster {
   padding-top: 140px;
   padding-bottom: 60px;
